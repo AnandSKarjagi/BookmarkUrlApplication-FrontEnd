@@ -1,0 +1,93 @@
+<div>
+    <form [formGroup]="addCardForm">
+    <h1 mat-dialog-title> Submit your entry</h1>
+    <div>
+        <div>
+            <mat-form-field appearence = "fill" [floatLabel] = true>
+                <mat-label>URL</mat-label>
+                <input placeholder="www.xyz.com" matInput formControlName="longurl">
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearence = "fill" [floatLabel] = true>
+                <mat-label>Title</mat-label>
+                <input placeholder="Title" matInput formControlName="title">
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearence = "fill" [floatLabel] = true>
+                <mat-label>Description</mat-label>
+                <input placeholder="Description" matInput formControlName="description">
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field color="accent" appearance="fill">
+                <mat-label>Expiry Date</mat-label>
+                <input matInput [matDatepicker]="picker1" formControlName="expirydate">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Choose Tribe</mat-label>
+                <mat-select [(value)]="tribe">
+                    <mat-option>Clear</mat-option>
+                    <mat-option *ngFor="let tribe of keys(tribes)" [value] = "tribe">{{tribe}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Choose Team</mat-label>
+                <mat-select [(value)]="team">
+                    <mat-option>Clear</mat-option>
+                    <mat-option *ngFor="let team of keys(teams)" [value] = "team">{{team}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Choose Application</mat-label>
+                <mat-select [(value)]="application">
+                    <mat-option>Clear</mat-option>
+                  <mat-option *ngFor="let app of keys(apps)" [value] = "app">{{app}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+       <!-- <div class="form-group" id="profpic">
+          <img [src]="icon" id="imgProfile"  class="img-thumbnail"  alt="" />
+        <div>
+          <fieldset class="border p-3 mt-4">
+            <div class="col-12">
+              <div class="form-group" id="profpic">
+                <div class="mt-2">
+                  <input type="file" (change)="onFileChanged($event)" id="profpicfile"  name="profpicfile"/>
+                  <a (click)="triggerInput()" class="btn btn-sm btn-success w-100 text-white">Upload Avatar</a>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div> -->
+        <!--<div class ="row">
+            <div class="col-xl-3 col-md-6">
+                <app-material-file-upload (complete)="onFileComplete($event)">
+                </app-material-file-upload>
+            </div>
+          </div>-->
+          </div>
+        </form>
+    </div>
+        <div class ="row">
+            <div class="col-xl-3 col-md-6">
+            <mat-card-actions>
+                <button mat-button (click)= "save()">Save</button>
+             </mat-card-actions>
+             </div>
+             <div class="col-xl-3 col-md-6">
+             <mat-card-actions>
+                <button mat-button (click)= "cancel()">Cancel</button>
+             </mat-card-actions>
+             </div>
+        </div>

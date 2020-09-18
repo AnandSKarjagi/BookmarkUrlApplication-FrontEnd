@@ -1,0 +1,21 @@
+<sb-layout-dashboard *ngIf ="isAdmin">
+    <sb-dashboard-head title="User Management" [hideBreadcrumbs]="true">
+        </sb-dashboard-head>
+        <sb-card>
+            <div class="card-body">
+                Admin panel to manage users
+            </div>
+            </sb-card>
+            <sb-card>
+                <div class="card-header">
+                    <fa-icon class="mr-1" [icon]='["fas", "table"]'>
+
+                    </fa-icon>User Details
+                </div>
+        <div class="card-body">
+            <sb-ng-bootstrap-table [pageSize]="6">
+
+            </sb-ng-bootstrap-table>
+        </div>
+        </sb-card>
+    </sb-layout-dashboard>

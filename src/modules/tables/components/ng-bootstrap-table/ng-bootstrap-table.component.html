@@ -1,0 +1,24 @@
+<form [formGroup]="insertForm" (ngSubmit)="onSubmit()" >
+    <div class="form-group">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope = 'col'>
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </th>
+            </tr>
+            <tr>
+                <th scope="col" ><span>User Name</span></th>
+                <th scope="col" ><span>Administrator</span></th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr *ngFor="let cataloguser of  catalogusers$| async">
+                <td><ngb-highlight [result]= "cataloguser.userName" ></ngb-highlight></td>
+                <td><input type="checkbox" [value]="cataloguser.userName" [(ngModel)]="cataloguser.isAdmin" [ngModelOptions]="{standalone: true}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</form>
+
