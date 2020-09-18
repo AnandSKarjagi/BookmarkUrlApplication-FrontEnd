@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'sb-sort-icon',
+    selector: 'BK-sort-icon',
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './sort-icon.component.html',
     styleUrls: ['sort-icon.component.scss'],

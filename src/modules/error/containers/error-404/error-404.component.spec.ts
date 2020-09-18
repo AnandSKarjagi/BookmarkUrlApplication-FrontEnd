@@ -6,7 +6,7 @@ import { Error404Component } from './error-404.component';
 
 @Component({
     template: `
-        <sb-error-404 [someInput]="someInput" (someFunction)="someFunction($event)"></sb-error-404>
+        <BK-error-404 [someInput]="someInput" (someFunction)="someFunction($event)"></BK-error-404>
     `,
 })
 class TestHostComponent {
@@ -45,6 +45,6 @@ describe('Error404Component', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-error-404')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-error-404')).toEqual(jasmine.anything());
     });
 });

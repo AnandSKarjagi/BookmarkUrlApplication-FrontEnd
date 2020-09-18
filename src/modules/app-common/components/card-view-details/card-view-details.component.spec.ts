@@ -6,10 +6,10 @@ import { CardViewDetailsComponent } from './card-view-details.component';
 
 @Component({
     template: `
-        <sb-card-view-details
+        <BK-card-view-details
             [someInput]="someInput"
             (someFunction)="someFunction($event)"
-        ></sb-card-view-details>
+        ></BK-card-view-details>
     `,
 })
 class TestHostComponent {
@@ -48,6 +48,6 @@ describe('CardViewDetailsComponent', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-card-view-details')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-card-view-details')).toEqual(jasmine.anything());
     });
 });

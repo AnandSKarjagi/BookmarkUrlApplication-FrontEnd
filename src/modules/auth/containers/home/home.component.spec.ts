@@ -6,7 +6,7 @@ import { HomeComponent } from './home.component';
 
 @Component({
   template: `
-      <sb-home [someInput]="someInput" (someFunction)="someFunction($event)"></sb-home>
+      <BK-home [someInput]="someInput" (someFunction)="someFunction($event)"></BK-home>
   `,
 })
 class TestHostComponent {
@@ -45,6 +45,6 @@ describe('HomeComponent', () => {
   });
 
   it('should display the component', () => {
-      expect(hostComponentNE.querySelector('sb-home')).toEqual(jasmine.anything());
+      expect(hostComponentNE.querySelector('BK-home')).toEqual(jasmine.anything());
   });
 });

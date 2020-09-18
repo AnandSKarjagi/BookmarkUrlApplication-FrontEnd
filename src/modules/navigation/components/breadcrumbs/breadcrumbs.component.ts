@@ -4,7 +4,7 @@ import { NavigationService } from '@modules/navigation/services';
 import { Subscription } from 'rxjs';
 
 @Component({
-    selector: 'sb-breadcrumbs',
+    selector: 'BK-breadcrumbs',
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './breadcrumbs.component.html',
     styleUrls: ['breadcrumbs.component.scss'],

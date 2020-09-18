@@ -8,7 +8,7 @@ import { TopNavComponent } from './top-nav.component';
 
 @Component({
     template: `
-        <sb-top-nav [someInput]="someInput" (someFunction)="someFunction($event)"></sb-top-nav>
+        <BK-top-nav [someInput]="someInput" (someFunction)="someFunction($event)"></BK-top-nav>
     `,
 })
 class TestHostComponent {
@@ -51,6 +51,6 @@ describe('TopNavComponent', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-top-nav')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-top-nav')).toEqual(jasmine.anything());
     });
 });

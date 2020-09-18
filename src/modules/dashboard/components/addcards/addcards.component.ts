@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 import { BookmarkService } from '../../services/bookmark.service';
 declare let $: any;
 @Component({
-    selector: 'sb-addcards',
+    selector: 'BK-addcards',
     templateUrl: './addcards.component.html',
     styleUrls: ['./addcards.component.scss'],
 })

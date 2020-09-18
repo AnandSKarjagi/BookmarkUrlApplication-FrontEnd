@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Global } from 'app/global';
 @Component({
-    selector: 'sb-dashboard-tables',
+    selector: 'BK-dashboard-tables',
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './dashboard-tables.component.html',
     styleUrls: ['dashboard-tables.component.scss'],

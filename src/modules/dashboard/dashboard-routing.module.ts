@@ -19,7 +19,7 @@ export const ROUTES: Routes = [
     {
         path: '',
         data: {
-            title: 'Dashboard - Url Catalog Angular',
+            title: 'Dashboard - Bookmark URL Angular',
             breadcrumbs: [
                 {
                     text: 'Dashboard',

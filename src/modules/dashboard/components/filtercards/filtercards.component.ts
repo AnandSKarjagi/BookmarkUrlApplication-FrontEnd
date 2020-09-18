@@ -10,7 +10,7 @@ import { GroupcardsComponent } from '../groupcards/groupcards.component';
 import { Filters } from './Filters';
 
 @Component({
-    selector: 'sb-filtercards',
+    selector: 'BK-filtercards',
     templateUrl: './filtercards.component.html',
     styleUrls: ['./filtercards.component.scss'],
 })

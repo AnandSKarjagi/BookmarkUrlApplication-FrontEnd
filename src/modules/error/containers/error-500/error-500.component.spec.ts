@@ -6,7 +6,7 @@ import { Error500Component } from './error-500.component';
 
 @Component({
     template: `
-        <sb-error-500 [someInput]="someInput" (someFunction)="someFunction($event)"></sb-error-500>
+        <BK-error-500 [someInput]="someInput" (someFunction)="someFunction($event)"></BK-error-500>
     `,
 })
 class TestHostComponent {
@@ -45,6 +45,6 @@ describe('Error500Component', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-error-500')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-error-500')).toEqual(jasmine.anything());
     });
 });

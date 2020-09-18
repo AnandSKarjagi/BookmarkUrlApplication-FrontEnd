@@ -9,7 +9,7 @@ const mockSideNavItem = new MockSideNavItem();
 
 @Component({
     template: `
-        <sb-side-nav-item [sideNavItem]="sideNavItem"></sb-side-nav-item>
+        <BK-side-nav-item [sideNavItem]="sideNavItem"></BK-side-nav-item>
     `,
 })
 class TestHostComponent {
@@ -48,6 +48,6 @@ describe('SideNavItemComponent', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-side-nav-item')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-side-nav-item')).toEqual(jasmine.anything());
     });
 });

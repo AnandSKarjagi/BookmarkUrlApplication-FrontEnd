@@ -6,7 +6,7 @@ import {Global} from 'app/global';
 import { Subscription } from 'rxjs';
 
 @Component({
-    selector: 'sb-side-nav',
+    selector: 'BK-side-nav',
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './side-nav.component.html',
     styleUrls: ['side-nav.component.scss'],

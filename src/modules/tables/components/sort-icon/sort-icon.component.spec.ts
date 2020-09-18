@@ -6,7 +6,7 @@ import { SortIconComponent } from './sort-icon.component';
 
 @Component({
     template: `
-        <sb-sort-icon [someInput]="someInput" (someFunction)="someFunction($event)"></sb-sort-icon>
+        <BK-sort-icon [someInput]="someInput" (someFunction)="someFunction($event)"></BK-sort-icon>
     `,
 })
 class TestHostComponent {
@@ -45,6 +45,6 @@ describe('SortIconComponent', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-sort-icon')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-sort-icon')).toEqual(jasmine.anything());
     });
 });

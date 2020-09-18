@@ -12,7 +12,7 @@ import { NavigationService } from '@modules/navigation/services';
 import { Subscription } from 'rxjs';
 
 @Component({
-    selector: 'sb-layout-dashboard',
+    selector: 'BK-layout-dashboard',
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './layout-dashboard.component.html',
     styleUrls: ['layout-dashboard.component.scss'],
@@ -20,11 +20,11 @@ import { Subscription } from 'rxjs';
 export class LayoutDashboardComponent implements OnInit, OnDestroy {
     @Input() static = false;
     @Input() light = false;
-    @HostBinding('class.sb-sidenav-toggled') sideNavHidden = false;
+    @HostBinding('class.BK-sidenav-toggled') sideNavHidden = false;
     subscription: Subscription = new Subscription();
     sideNavItems = sideNavItems;
     sideNavSections = sideNavSections;
-    sidenavStyle = 'sb-sidenav-dark';
+    sidenavStyle = 'BK-sidenav-dark';
 
     constructor(
         public navigationService: NavigationService,
@@ -32,7 +32,7 @@ export class LayoutDashboardComponent implements OnInit, OnDestroy {
     ) {}
     ngOnInit() {
         if (this.light) {
-            this.sidenavStyle = 'sb-sidenav-light';
+            this.sidenavStyle = 'BK-sidenav-light';
         }
         this.subscription.add(
             this.navigationService.sideNavVisible$().subscribe(isVisible => {

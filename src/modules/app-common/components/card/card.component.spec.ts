@@ -6,7 +6,7 @@ import { CardComponent } from './card.component';
 
 @Component({
     template: `
-        <sb-card [someInput]="someInput" (someFunction)="someFunction($event)"></sb-card>
+        <BK-card [someInput]="someInput" (someFunction)="someFunction($event)"></BK-card>
     `,
 })
 class TestHostComponent {
@@ -45,6 +45,6 @@ describe('CardComponent', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-card')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-card')).toEqual(jasmine.anything());
     });
 });

@@ -5,7 +5,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FilterOption } from 'app/global';
 
 @Component({
-    selector: 'sb-groupcards',
+    selector: 'BK-groupcards',
     templateUrl: './groupcards.component.html',
     styleUrls: ['./groupcards.component.scss'],
 })

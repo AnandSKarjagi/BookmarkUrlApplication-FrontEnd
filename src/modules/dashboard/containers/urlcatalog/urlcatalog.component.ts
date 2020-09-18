@@ -13,7 +13,7 @@ interface SelectedChange {
 }
 const SELECTED_CARD_SELECTOR = 'selected';
 @Component({
-    selector: 'sb-urlcatalog',
+    selector: 'BK-urlcatalog',
     templateUrl: './urlcatalog.component.html',
     styleUrls: ['./urlcatalog.component.scss'],
 })

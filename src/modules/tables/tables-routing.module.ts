@@ -19,7 +19,7 @@ export const ROUTES: Routes = [
         canActivate: [],
         component: tablesContainers.TablesComponent,
         data: {
-            title: 'Tables - Url Catalog Angular',
+            title: 'Tables - Bookmark URL Angular',
             breadcrumbs: [
                 {
                     text: 'Dashboard',

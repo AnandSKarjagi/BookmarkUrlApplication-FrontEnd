@@ -6,7 +6,7 @@ import { Global } from 'app/global';
 import { AddcardsComponent } from '../addcards/addcards.component';
 
 @Component({
-    selector: 'sb-dashboard-cards',
+    selector: 'BK-dashboard-cards',
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './dashboard-cards.component.html',
     styleUrls: ['dashboard-cards.component.scss'],

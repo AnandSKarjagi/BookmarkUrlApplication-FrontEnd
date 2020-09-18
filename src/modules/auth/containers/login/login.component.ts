@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
 import { AuthService } from '../../services/auth.service';
 import { UserService } from '../../services/user.service';
 @Component({
-    selector: 'sb-login',
+    selector: 'BK-login',
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './login.component.html',
     styleUrls: ['login.component.scss'],

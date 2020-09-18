@@ -3,7 +3,7 @@ import { UtilityService } from '@modules/utility/services';
 import { take } from 'rxjs/operators';
 
 @Component({
-    selector: 'sb-version',
+    selector: 'BK-version',
     templateUrl: './version.component.html',
     styleUrls: ['version.component.scss'],
 })

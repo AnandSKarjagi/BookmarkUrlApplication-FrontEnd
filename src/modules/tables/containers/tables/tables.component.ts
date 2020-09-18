@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Global } from 'app/global';
 
 @Component({
-    selector: 'sb-tables',
+    selector: 'BK-tables',
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './tables.component.html',
     styleUrls: ['tables.component.scss'],

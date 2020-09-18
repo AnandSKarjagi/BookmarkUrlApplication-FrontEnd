@@ -3,16 +3,16 @@ a.nav-link(
     (click)='expanded = !expanded',
     [ngClass]='{active: isActive, collapsed: !expanded}'
 )
-    .sb-nav-link-icon(*ngIf='sideNavItem.icon')
+    .BK-nav-link-icon(*ngIf='sideNavItem.icon')
         fa-icon([icon]='["fas", sideNavItem.icon]')
     | {{sideNavItem.text}}
-    .sb-sidenav-collapse-arrow
+    .BK-sidenav-collapse-arrow
         fa-icon(
             *ngIf='sideNavItem.submenu',
             [icon]="['fas', 'angle-down']"
         ).ml-auto
-nav.sb-sidenav-menu-nested.nav(*ngIf='sideNavItem.submenu && expanded')
-    sb-side-nav-item.submenu(
+nav.BK-sidenav-menu-nested.nav(*ngIf='sideNavItem.submenu && expanded')
+    BK-side-nav-item.submenu(
         *ngFor='let submenuItem of sideNavItem.submenu',
         [sideNavItem]='submenuItem'
     )

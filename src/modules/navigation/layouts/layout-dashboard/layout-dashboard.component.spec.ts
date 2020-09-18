@@ -8,10 +8,10 @@ import { LayoutDashboardComponent } from './layout-dashboard.component';
 
 @Component({
     template: `
-        <sb-layout-dashboard
+        <BK-layout-dashboard
             [someInput]="someInput"
             (someFunction)="someFunction($event)"
-        ></sb-layout-dashboard>
+        ></BK-layout-dashboard>
     `,
 })
 class TestHostComponent {
@@ -57,6 +57,6 @@ describe('LayoutDashboardComponent', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-layout-dashboard')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-layout-dashboard')).toEqual(jasmine.anything());
     });
 });

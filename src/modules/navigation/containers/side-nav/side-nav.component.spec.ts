@@ -9,7 +9,7 @@ import { SideNavComponent } from './side-nav.component';
 
 @Component({
     template: `
-        <sb-side-nav [someInput]="someInput" (someFunction)="someFunction($event)"></sb-side-nav>
+        <BK-side-nav [someInput]="someInput" (someFunction)="someFunction($event)"></BK-side-nav>
     `,
 })
 class TestHostComponent {
@@ -57,6 +57,6 @@ describe('SideNavComponent', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-side-nav')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-side-nav')).toEqual(jasmine.anything());
     });
 });

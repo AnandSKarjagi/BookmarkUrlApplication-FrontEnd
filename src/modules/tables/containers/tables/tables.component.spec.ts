@@ -6,7 +6,7 @@ import { TablesComponent } from './tables.component';
 
 @Component({
     template: `
-        <sb-tables [someInput]="someInput" (someFunction)="someFunction($event)"></sb-tables>
+        <BK-tables [someInput]="someInput" (someFunction)="someFunction($event)"></BK-tables>
     `,
 })
 class TestHostComponent {
@@ -45,6 +45,6 @@ describe('TablesComponent', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-tables')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-tables')).toEqual(jasmine.anything());
     });
 });

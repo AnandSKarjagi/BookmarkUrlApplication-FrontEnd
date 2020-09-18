@@ -8,10 +8,10 @@ import { BreadcrumbsComponent } from './breadcrumbs.component';
 
 @Component({
     template: `
-        <sb-breadcrumbs
+        <BK-breadcrumbs
             [someInput]="someInput"
             (someFunction)="someFunction($event)"
-        ></sb-breadcrumbs>
+        ></BK-breadcrumbs>
     `,
 })
 class TestHostComponent {
@@ -54,6 +54,6 @@ describe('BreadcrumbsComponent', () => {
     });
 
     it('should display the component', () => {
-        expect(hostComponentNE.querySelector('sb-breadcrumbs')).toEqual(jasmine.anything());
+        expect(hostComponentNE.querySelector('BK-breadcrumbs')).toEqual(jasmine.anything());
     });
 });
