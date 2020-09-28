@@ -11,3 +11,7 @@ Coverage  -- CodeCov -- Link to be updated
 CD -- Heroku 
 
 
+
+.. image:: https://codecov.io/gh/AnandSKarjagi/BookmarkUrlApplication-FrontEnd/branch/master/graph/badge.svg?token=V4V9B9RMCB
+:target: https://codecov.io/gh/AnandSKarjagi/BookmarkUrlApplication-FrontEnd
+    
